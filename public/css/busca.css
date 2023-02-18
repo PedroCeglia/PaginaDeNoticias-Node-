@@ -1,0 +1,80 @@
+.busca-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background-color: rgb(236,236,236);
+}
+.busca-container .lista-itens-busca{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 4px solid rgb(156, 203, 230);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.busca-container .lista-itens-busca h1{
+    background-color: rgb(156, 203, 230);
+    padding: 10px 20px;
+    width: 100%;
+
+    text-align: center;
+    color: rgba(0, 0, 0, 0.834);
+    font-weight: lighter;
+    letter-spacing: .5px;
+    word-spacing: 5px;
+    
+}
+.busca-container .lista-itens-busca .item-busca-container{
+    width: 100%;
+    max-width: 900px;
+    min-width: 400px;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    border-top: 2px solid rgb(156, 203, 230);  
+}
+
+.busca-container .lista-itens-busca .item-busca-container img{
+    min-width: 200px;
+    max-width: 200px;
+    height: 100%;
+    object-fit: fill;
+    border-right: 5px solid rgb(156, 203, 230);
+}
+.busca-container .lista-itens-busca .item-busca-container .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 20px;
+}
+.busca-container .lista-itens-busca .item-busca-container .info h2{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgba(0,0,0,.8);
+}
+.busca-container .lista-itens-busca .item-busca-container .info p{
+    font-size: .9em;
+    font-weight: lighter;
+    color: rgba(0,0,0,.8);
+    min-width: 300px;
+    letter-spacing: .5px;
+    width: 60%;
+    margin: 10px 0;
+}
+.busca-container .lista-itens-busca .item-busca-container .info a{
+    color: rgb(46, 98, 123);
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<%- include('widgets/header.html') %>
+
+<main class="noticia-container">
+    <section class="content">
+        <div class="noticia-content">
+            <h1><%= noticia.titulo %></h1>
+            <h3 class="autor-name"><%= noticia.autor %></h3>
+            <p>
+                <%= noticia.textointro1 %>
+            </p>            
+            <p>
+                <%= noticia.textointro2 %>
+            </p>
+            <img src="<%= noticia.image %>" alt="<%= noticia.slug %>"/>
+            <h2><%= noticia.subtitulo %></h2>
+            <p>
+                <%= noticia.texto1 %>
+            </p>
+            <p>
+                <%= noticia.texto2 %>
+            </p>
+            <p>
+                <%= noticia.texto3 %>
+            </p>
+        </div>
+        <div class="mais-vistos-container">
+            <div class="header-right">
+                <h3>Mais Vistos</h3>
+            </div>
+            <% for(var i = 0; i < posts.length; i++ ){ %>
+                <div class="mais-vistos-item">
+                    <img src="<%= posts[i].image %>" alt="<%= posts[i].slug %>"/>
+                    <div class="infos">
+                        <h4><%= posts[i].titulo %></h4>
+                        <p>
+                            <%= posts[i].textocurto %>
+                            <b>( <%= posts[i].views %> views )</b>
+                        </p>
+                        <a href="/<%=posts[i].slug %>">Ler Mais</a>
+                    </div>
+                </div>
+            <% } %>
+            <div class="footer-right"></div>
+        </div>        
+    </section>
+    
+</main>
+
+<%- include('widgets/footer.html') %>
+    </body>
+</html>

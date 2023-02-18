@@ -1,0 +1,21 @@
+<%- include('widgets/header.html') %>
+<main>
+    <div class="busca-container">     
+        <div class="lista-itens-busca">
+        <h1>Resultados: <%= contagem %></h1>    
+        <% for( let i = 0; i < busca.length ; i++ ){ %>
+            <div class="item-busca-container">
+                <img src="<%= busca[i].image %>" alt="<%= busca[i].slug %>"/>
+                <div class="info">
+                    <h2><%= busca[i].titulo %></h2>
+                    <p><%= busca[i].textocurto %>...</p>
+                    <a href="<%= busca[i].slug %>">Ler Mais</a>                    
+                </div>
+            </div>
+        <% } %>
+        </div>
+    </div>
+</main>
+<%- include('widgets/footer.html') %>
+    </body>
+</html>

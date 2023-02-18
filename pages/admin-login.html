@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal de Noticias</title>
+        <link rel="stylesheet" type="text/css" href="../public/css/adminLogin.css"/>
+        <link rel="stylesheet" type="text/css" href="../public/css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="menu-header" src="../public/icons/menu.png" alt="Icon Menu"/>
+                <h1><a href="/">Portal<b>Noticias</b></a></h1>
+                <div class="search-view">
+                    <form>
+                        <img src="../public/icons/search.png" alt="Icon Search"/>
+                        <input name="busca" type="text" placeholder="Buscar"/>                        
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="login-adm-container">
+                <div class="login-adm-content">
+                    <h1>Login</h1>
+                    <form method="post">
+                        <h2>Username :</h2>
+                        <input type="text" name="login" placeholder="username"/>
+                        <h2>Senha :</h2>
+                        <input type="password" autocomplete="on" name="senha" placeholder="password">
+                        <input class="button" type="submit" name="logar" value="Logar"/>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <%- include("./widgets/footer.html") %>

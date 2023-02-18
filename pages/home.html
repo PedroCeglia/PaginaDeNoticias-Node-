@@ -1,0 +1,51 @@
+<%- include('widgets/header.html') %>
+        <main>
+            <section class="intro-noticias-container">
+                <div class="content">
+                    <img src="<%= posts[0].image %>" alt="Praia"/>
+                    <div class="titulo-descricao">
+                        <h3><%= posts[0].titulo %></h3>
+                        <p><%= posts[0].textocurto %></p>
+                    </div>                    
+                </div>
+            </section>
+            <section class="ultimas-noticias-container">
+                <h2>Ultimas Notícias</h2>
+                <div class="content">
+                    <div class="left">
+                        <% for(var i = 1; i < posts.length; i++ ){ %>
+                            <div class="ultima-noticia-item">
+                            <img src="<%= posts[i].image %>" alt="Noticia"/>
+                            <h3><%= posts[i].titulo %></h3>
+                            <p>
+                                <%= posts[i].textocurto %>
+                            </p>
+                            <a href="<%= posts[i].slug %>">Ler Mais</a>
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="mais-vistos-container">
+                        <div class="header-right">
+                            <h3>Mais Vistos</h3>
+                        </div>
+                        <% for(var i = 0; i < postsTop.length; i++ ){ %>
+                            <div class="mais-vistos-item">
+                                <img src="<%= postsTop[i].image %>" alt="<%= postsTop[i].slug %>"/>
+                                <div class="infos">
+                                    <h4><%= postsTop[i].titulo %></h4>
+                                    <p>
+                                        <%= postsTop[i].textocurto %>... 
+                                        <b> ( <%= postsTop[i].views %> views )</b>
+                                    </p>
+                                    <a href="/<%= postsTop[i].slug %>">Ler Mais</a>
+                                </div>
+                            </div>
+                        <% } %>
+                        <div class="footer-right"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+<%- include('widgets/footer.html') %>
+    </body>
+</html>

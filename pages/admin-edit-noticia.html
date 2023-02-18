@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal de Noticias</title>
+        <link rel="stylesheet" type="text/css" href="../../../public/css/adminEditNoticia.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../public/css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="menu-header" src="../../../public/icons/menu.png" alt="Icon Menu"/>
+                <h1><a href="/">Portal<b>Noticias</b></a></h1>
+                <div class="search-view">
+                    <form>
+                        <img src="../../../public/icons/search.png" alt="Icon Search"/>
+                        <input name="busca" type="text" placeholder="Buscar"/>                        
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="edit-noticia-container">
+                <div class="edit-noticia-content">
+                    <div class="header-add-noticia active">
+                        <h2>Editar noticia</h2>
+                    </div>
+                    <form enctype="multipart/form-data" method="post">
+                        <label>Titulo :</label>
+                        <input type="text" name="titulo" placeholder="Digite aqui..."/>
+                        <label>SubTitulo :</label>
+                        <input type="text" name="subtitulo" placeholder="Digite aqui..."/>                            
+                        <label>Link da Imagem :</label>
+                        <input type="text" name="imagem" placeholder="Digite aqui..."/>
+                        <label>Slug :</label>
+                        <input type="text" name="slug" placeholder="Digite aqui..."/>
+                        <label>Texto de Introdução 1 :</label>
+                        <textarea class="intro" name="intro1" placeholder="Digite aqui..."></textarea>
+                        <label>Texto de Introdução 2 :</label>
+                        <textarea class="intro" name="intro2" placeholder="Digite aqui..."></textarea>
+                        <label>Texto de Principal 1 :</label>
+                        <textarea class="main" name="textmain1" placeholder="Digite aqui..."></textarea>
+                        <label>Texto de Principal 2 :</label>
+                        <textarea class="main" name="textmain2" placeholder="Digite aqui..."></textarea>
+                        <label>Texto de Principal 3 :</label>
+                        <textarea class="main" name="textmain3" placeholder="Digite aqui..."></textarea>
+                        <input type="submit" name="criar"/>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <%- include("./widgets/footer.html") %>

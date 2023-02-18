@@ -1,0 +1,135 @@
+.painel-adm-container{
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    background-color: #efefef;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.painel-adm-container h1{
+    color: rgba(0,0,0,.8);
+    font-size: 2.5em;
+    font-weight: lighter;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 20px;
+}
+.painel-adm-container .editar-noticia{
+    width: 90%;
+    min-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.painel-adm-container .editar-noticia .item-add-noticia{
+    max-width: 400px;
+    min-width: 270px;
+    height: 300px;
+    width: 100%;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: rgb(190, 202, 228);
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,.8);
+    overflow: hidden;
+}
+.painel-adm-container .editar-noticia .item-add-noticia img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transition: all .4s;
+}
+.painel-adm-container .editar-noticia .item-add-noticia a.button{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(226, 241, 236);
+    color: #000;
+    margin: 10px 20px;
+    border: 1px solid rgba(0,0,0,.4);
+    transition: all .1s;
+}
+.painel-adm-container .editar-noticia .item-add-noticia a.button:hover{
+    background-color: #8a8585b4 ;
+}
+.painel-adm-container .editar-noticia .item-add-noticia a img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.painel-adm-container .editar-noticia .noticia-container{
+    max-width: 400px;
+    min-width: 270px;
+    height: 300px;
+    width: 100%;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(190, 239, 223);
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,.8);
+    overflow: hidden;
+}
+.painel-adm-container .editar-noticia .noticia-container img{
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+.painel-adm-container .editar-noticia .noticia-container .noticias-info{
+    padding: 10px 20px;
+    width: 100%;
+}
+.painel-adm-container .editar-noticia .noticia-container .noticias-info h3{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.painel-adm-container .editar-noticia .noticia-container .noticias-info h4{
+    font-size: 1em;
+}
+.painel-adm-container .editar-noticia .noticia-container .buttons-area{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    align-self: flex-end;
+}
+.painel-adm-container .editar-noticia .noticia-container .buttons-area a{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.painel-adm-container .editar-noticia .noticia-container .buttons-area a.delete{
+    background-color: rgba(153, 30, 55, 0.851);
+    color: #efefef;
+    margin-right: 20px;
+}
+.painel-adm-container .editar-noticia .noticia-container .buttons-area a.edit{
+    background-color: #efefef;
+    color: #000;
+    border: 1px solid rgba(0,0,0,.2);
+}
+

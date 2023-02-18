@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* Header */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(5, 196, 239);
+}
+header .header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+header .header-container img.menu-header{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+header .header-container h1{
+    font-size: 2.1em;
+    font-weight: lighter;
+    margin-left: 150px;
+}
+header .header-container h1 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(0,0,0,.8);
+}
+header .header-container .search-view form{
+    border: 1px solid rgba(0,0,0,.4);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,.9);
+}
+header .header-container .search-view img{
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+}
+header .header-container .search-view input{
+    background-color: transparent;
+    width: 100%;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+/* Header */
+
+/* Main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 82%;
+    width: 100%;
+}
+/*  Mais Vistos Container */
+main .mais-vistos-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+    min-width: 500px;
+    margin-top: 20px;
+    border-left:3px solid rgb(156, 203, 230);
+    border-right:3px solid rgb(156, 203, 230);
+    border-radius: 10px;
+    
+}
+main .mais-vistos-container .header-right{
+    background-color: rgb(156, 203, 230);
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+main .mais-vistos-container .footer-right{
+    background-color: rgb(156, 203, 230);
+    padding: 10px 20px;
+    width: 100%;
+    height: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+main .mais-vistos-container .right-header h3{
+    color: rgba(0,0,0,.8);
+}
+
+/* Mais Vistos Item */
+main .mais-vistos-container .mais-vistos-item{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    border-top: 3px solid rgb(156, 203, 230);
+}
+main .mais-vistos-container .mais-vistos-item img{
+    min-width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+main .mais-vistos-container .mais-vistos-item .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-left: 20px;
+}
+main .mais-vistos-container .mais-vistos-item .infos h4{
+    color: rgba(0,0,0,.8);
+    font-weight: bold;
+    margin: 10px 0;
+}
+main .mais-vistos-container .mais-vistos-item .infos p{
+    font-weight: lighter;
+}
+main .mais-vistos-container .mais-vistos-item .infos p b{
+    font-size: .8em;
+
+}
+
+main .mais-vistos-container .mais-vistos-item a{
+    text-decoration: none;
+    color: rgb(85, 156, 197);
+    font-weight: bold;
+    margin: 10px;
+    align-self: flex-end;
+}
+/* Mais Vistos Item */
+/* Main */
+
+/* Footer */
+footer{
+    margin: 10px 0;
+    background-color: #0aacdc;
+    text-align: center;
+    color: white;
+    padding: 8px 0;
+    width: 100%;
+}
+/* Footer */

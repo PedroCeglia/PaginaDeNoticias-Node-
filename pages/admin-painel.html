@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portal de Noticias</title>
+        <link rel="stylesheet" type="text/css" href="../public/css/adminPainel.css"/>
+        <link rel="stylesheet" type="text/css" href="../public/css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <img class="menu-header" src="../public/icons/menu.png" alt="Icon Menu"/>
+                <h1><a href="/">Portal<b>Noticias</b></a></h1>
+                <div class="search-view">
+                    <form>
+                        <img src="../public/icons/search.png" alt="Icon Search"/>
+                        <input name="busca" type="text" placeholder="Buscar"/>                        
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="painel-adm-container">
+                <h1>Lista de Noticias</h1>
+                <div class="editar-noticia">
+
+                    <div class="item-add-noticia">
+                        <a href="/admin/noticia/cadastro" title="Adcionar Noticia"><img src="/public/icons/add.png" alt="Add Icon"/></a>
+                        <a class="button" href="/admin/noticia/cadastro">Adicionar nova Noticia</a>
+                    </div>
+
+                    <% for(let i = 0; i < posts.length; i++){%>
+                        <div class="noticia-container">
+                            <img src="<%= posts[i].image %>"/>
+                            <div class="noticias-info">
+                                <h3><%= posts[i].titulo %></h3>
+                                <h4><%= posts[i].subtitulo %></h4>
+                            </div>
+                            <div class="buttons-area">
+                                <a class="delete" href="/admin/noticia/delete/<%= posts[i].id%>">Delete</a>
+                                <a class="edit" href="/admin/noticia/edit/<%= posts[i].id%>">Edit</a>
+                            </div>
+                        </div>
+                    <% }%>                        
+                    
+
+                </div>
+            </div>
+        </main>
+        <%- include("./widgets/footer.html") %>
